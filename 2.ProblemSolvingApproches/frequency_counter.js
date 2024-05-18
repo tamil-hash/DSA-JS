@@ -9,7 +9,6 @@ const frequencyCounter = (value) => {
 };
 
 const sameMethod1 = (arr1, arr2) => {
-  console.log(arr1,arr2)
 	if (arr1.length !== arr2.length) {
 		return false;
 	}
@@ -28,7 +27,6 @@ const sameMethod1 = (arr1, arr2) => {
 };
 
 const sameMethod2 = (arr1, arr2) => {
-  console.log(arr1,arr2)
 	if (arr1.length !== arr2.length) {
 		return false;
 	}
@@ -36,7 +34,6 @@ const sameMethod2 = (arr1, arr2) => {
 	let fc2 = frequencyCounter(arr2);
 
 	for (const key of arr1) {
-    console.log(key, fc2[key * key])
 		if(!fc2[key * key]){
       return false;
     }
