@@ -1,4 +1,4 @@
-const { calcPerf, n } = require("./calcPerformace");
+const { calcPerformance, n } = require("./calcPerformance");
 
 const add1 = (n) => {
 	let o = 0;
@@ -8,6 +8,6 @@ const add1 = (n) => {
 	return o;
 };
 
-calcPerf(() => {
+calcPerformance(() => {
 	add1(n);
 }, "add1");

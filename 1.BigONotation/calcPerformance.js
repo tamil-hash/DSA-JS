@@ -1,4 +1,4 @@
-module.exports.calcPerf = (fn, fnName) => {
+module.exports.calcPerformance = (fn, fnName) => {
 	const t1 = performance.now();
 	fn();
 	const t2 = performance.now();
