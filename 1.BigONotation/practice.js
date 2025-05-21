@@ -129,9 +129,9 @@ function logAtMost10(n) {
  * Answer: time complexity: O(n), space complexity: O(1)
  */
 function logAtLeast10(n) {
-    for (var i = 1; i <= Math.max(n, 10); i++) {
-        console.log(i);
-    }
+	for (var i = 1; i <= Math.max(n, 10); i++) {
+		console.log(i);
+	}
 }
 
 /**
@@ -139,13 +139,13 @@ function logAtLeast10(n) {
  * Answer: time complexity: O(n), space complexity: O(n)
  */
 function onlyElementsAtEvenIndex(array) {
-    var newArray = Array(Math.ceil(array.length / 2));
-    for (var i = 0; i < array.length; i++) {
-        if (i % 2 === 0) {
-            newArray[i / 2] = array[i];
-        }
-    }
-    return newArray;
+	var newArray = Array(Math.ceil(array.length / 2));
+	for (var i = 0; i < array.length; i++) {
+		if (i % 2 === 0) {
+			newArray[i / 2] = array[i];
+		}
+	}
+	return newArray;
 }
 
 /**
@@ -153,23 +153,22 @@ function onlyElementsAtEvenIndex(array) {
  * Answer: time complexity: O(n^2), space complexity: O(n)
  */
 function subtotals(array) {
-    var subtotalArray = Array(array.length);
-    for (var i = 0; i < array.length; i++) {
-        var subtotal = 0;
-        for (var j = 0; j <= i; j++) {
-            subtotal += array[j];
-        }
-        subtotalArray[i] = subtotal;
-    }
-    return subtotalArray;
+	var subtotalArray = Array(array.length);
+	for (var i = 0; i < array.length; i++) {
+		var subtotal = 0;
+		for (var j = 0; j <= i; j++) {
+			subtotal += array[j];
+		}
+		subtotalArray[i] = subtotal;
+	}
+	return subtotalArray;
 }
-
 
 /**
  * Logarithms
- * O(log n) - sits between O(1) and O(n) 
+ * O(log n) - sits between O(1) and O(n)
  * For ex: when the array is only looped to its half.
- * 
+ *
  * O(n log n) - sits between O(n) and O(n^2)
  * For ex: when the array which is nested looped but is only looped to its half.
  */
