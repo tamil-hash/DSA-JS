@@ -1,4 +1,4 @@
-console.log("frequeny  counter with array/n================")
+console.log("frequency  counter with array/n================")
 
 const frequencyCounter = (value) => {
 	let fc = {};
@@ -56,7 +56,7 @@ console.log(same([1, 2, 1], [4, 4, 1]));
 
 
 
-console.log("frequeny  counter with string/n================")
+console.log("frequency  counter with string/n================")
 
 const validAnagram = (str1, str2) => {
   if(str1.length !== str2.length) {
